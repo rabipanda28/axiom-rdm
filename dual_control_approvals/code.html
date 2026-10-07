@@ -1,0 +1,503 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"ink-muted":"#8e8e8e","on-secondary-container":"#465f80","surface-tint":"#005bbf","status-danger-bg":"#fff0ee","on-secondary-fixed":"#001c39","on-background":"#1c1b1b","on-tertiary-fixed-variant":"#004c6b","on-tertiary-container":"#f0f8ff","primary-container":"#006de3","surface-alt":"#f6f6f6","secondary-fixed":"#d3e3ff","inverse-on-surface":"#f3f0ef","on-surface":"#1c1b1b","nav-text":"#dbe7ef","canvas":"#ffffff","on-surface-variant":"#414754","primary-fixed":"#d8e2ff","ink":"#151515","status-warning":"#9a6700","error":"#ba1a1a","background":"#fcf9f8","surface-subtle":"#f7f8fa","tertiary-container":"#0079a8","on-primary-fixed":"#001a41","on-secondary-fixed-variant":"#2f4868","on-primary-container":"#f6f6ff","nav-deep":"#161b2f","outline-variant":"#c1c6d6","on-error":"#ffffff","on-error-container":"#93000a","nav-hover":"#082b4b","status-danger":"#a61b1b","interactive-hover":"#005bbe","status-success":"#087443","surface-container-highest":"#e5e2e1","primary-fixed-dim":"#adc7ff","surface-variant":"#e5e2e1","inverse-surface":"#313030","surface":"#fcf9f8","status-info-bg":"#e7f0fb","on-tertiary":"#ffffff","ink-mid":"#515151","secondary-fixed-dim":"#afc8ee","status-info":"#006de3","on-primary":"#ffffff","inverse-primary":"#adc7ff","nav-active":"#00395d","line-hairline":"#e2e2e2","secondary":"#486081","nav-muted":"#8da6b9","status-warning-bg":"#fff7df","primary":"#0055b4","surface-bright":"#fcf9f8","nav-bg":"#001e3c","interactive-tint":"#ecf8ff","surface-container":"#f0edec","surface-dim":"#dcd9d9","on-primary-fixed-variant":"#004493","code-ink":"#e5e7eb","line":"#d7dadd","tertiary":"#005f85","tertiary-fixed-dim":"#82cfff","surface-container-high":"#eae7e7","secondary-container":"#c0d9ff","surface-container-low":"#f6f3f2","outline":"#727785","badge-counter":"#ffc21c","surface-container-lowest":"#ffffff","code-bg":"#111827","tertiary-fixed":"#c6e7ff","error-container":"#ffdad6","status-success-bg":"#eaf7f1","on-secondary":"#ffffff","on-tertiary-fixed":"#001e2d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"44px","space-xs":"4px","space-lg":"20px","margin-mobile":"16px","gutter":"18px","space-sm":"8px","space-xl":"32px","space-md":"14px","gutter-mobile":"12px"},"fontFamily":{"label-sm":["Inter"],"code-sm":["\"ui-monospace, SFMono-Regular, Menlo, monospace\""],"body-sm":["Inter"],"headline-sm":["Inter"],"code-xs":["\"ui-monospace, SFMono-Regular, Menlo, monospace\""],"display-md":["Inter"],"title-sm":["Inter"],"display-lg":["Inter"],"caption":["Inter"],"nav-section":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"title-md":["Inter"]},"fontSize":{"label-sm":["12px",{"lineHeight":"16px","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"code-xs":["11px",{"lineHeight":"16px","fontWeight":"500"}],"display-md":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-sm":["15px",{"lineHeight":"22px","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"700"}],"caption":["11px",{"lineHeight":"14px","letterSpacing":"0.07em","fontWeight":"700"}],"nav-section":["10px",{"lineHeight":"14px","letterSpacing":"0.1em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"title-md":["17px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface-subtle font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[246px] bg-nav-bg border-r border-line z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-[72px] px-space-lg flex items-center gap-space-sm border-b border-line-hairline/20 bg-nav-deep"><div class="w-8 h-8 flex items-center justify-center shrink-0"><img alt="Barclays Eagle Emblem" class="h-7 w-7 object-contain block" src="https://lh3.googleusercontent.com/aida/AEtjO1VHkEX8QlnUCgi4TVM3Y_PI0voKOvhvN0zaAC8vzHEvGBl7es0rWTWLv1wkir_6AFh9BXL0qJE_GvQWcwKwHB5U1LfT2czK3z913AztQbYdu-HnQpRg3iEMOTGGYYP2y6_I5TJExtv4HpFdpBaZHtw8PEWo3xCikII2O41imtqEeOIed8p3KeJNOgVbAVb1-9SkBq8k_zZFFOkXWrFYFK3kxpo2cq0EtU3lHRDvloD7-0Q9re7PQlxPJg"></div><div class="flex flex-col"><span class="font-title-sm text-title-sm text-canvas tracking-tight leading-none">AXIOM</span><span class="font-nav-section text-nav-section text-nav-muted uppercase mt-0.5">Data Platform</span></div></div><div class="px-space-md pt-space-lg pb-space-xs"><span class="font-nav-section text-nav-section uppercase tracking-wider text-nav-muted">Core Governance</span></div><nav class="flex flex-col space-y-0.5 px-space-xs" data-active-classes="bg-nav-active text-canvas border-l-[3px] border-[#00aeef]"><a class="flex items-center justify-between px-space-md py-2.5 rounded text-nav-text hover:bg-nav-hover hover:text-canvas transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="dashboard" href="#"><span class="truncate">Dashboard</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded text-nav-text hover:bg-nav-hover hover:text-canvas transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="reference-data" href="#"><span class="truncate">Reference Data</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 rounded transition-colors font-label-md bg-nav-active text-canvas border-l-[3px] border-[#00aeef]" data-path="approvals" href="#"><span class="truncate">Approvals Queue</span><span class="px-1.5 py-0.5 rounded text-[11px] font-bold bg-badge-counter text-on-surface ml-2 shrink-0">3</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded text-nav-text hover:bg-nav-hover hover:text-canvas transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="audit-trail" href="#"><span class="truncate">Audit Trail</span></a><div class="pt-space-md pb-space-xs px-space-sm"><span class="font-nav-section text-nav-section uppercase tracking-wider text-nav-muted">Integrations</span></div><a class="flex items-center justify-between px-space-md py-2.5 rounded text-nav-text hover:bg-nav-hover hover:text-canvas transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="apis" href="#"><span class="truncate">APIs &amp; Schema</span></a></nav></div><div class="p-space-md border-t border-line-hairline/20 bg-nav-deep"><div class="flex items-center justify-between text-nav-muted"><span class="font-code-xs text-code-xs">ENV: PROD-UK-LON</span><span class="w-2 h-2 rounded-full bg-status-success"></span></div></div></aside><div class="pl-[246px]"><header class="fixed top-0 left-[246px] right-0 h-[72px] bg-canvas border-b border-line border-t-4 border-t-[#00aeef] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="h-8 shrink-0 flex items-center"><img src="https://lh3.googleusercontent.com/aida/AEtjO1VNp9ZDuKdhds9Oq1QYbXZTUY5oQMNbbBKT0sRe3Wh9jXiNvc0yf_S2_AylUQLmVLlrGdSEeIRs3j56xWxYOlef6JfrArrn_p5CWD-2dujSXzNravAR6sSKq-3C6w0ZADHNLOlWjWdL_PZiBwWGQAkK5sxZ1x5zH9Vu0oGPBnmcYYsc03EfNY_j7vLGwzhdsBDvfHeaZifSNNcPruIo7d2WSLLoCJNH3MvlDgICLPIZ1v2GkBLijqOPcA" alt="Barclays" class="h-7 w-auto object-contain block"></div><span class="h-4 w-[1px] bg-line"></span><span class="font-caption text-caption tracking-wider text-ink-mid uppercase font-semibold">Corporate &amp; Investment Bank</span><span class="h-4 w-[1px] bg-line"></span><span class="font-label-sm text-label-sm text-tertiary font-medium">Reference Data Node 04</span></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><button aria-label="Notifications" class="relative p-1 text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-0 right-0 w-2 h-2 bg-status-danger rounded-full"></span></button></div><a class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" data-path="help-center" href="#"><span class="material-symbols-outlined text-[18px]">help_outline</span><span class="">Help Center</span></a><div class="h-6 w-[1px] bg-line"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-on-surface font-semibold">J. Smith</span><span class="font-caption text-caption text-ink-muted uppercase">Authorizer</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-[72px] bg-surface-subtle min-h-screen px-margin"><div class="flex flex-col w-full pb-margin">
+<!-- Governance Context Header / Breadcrumb Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-md border-b border-line">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-caption text-caption tracking-wider">
+<span class="hover:text-primary cursor-pointer transition-colors">OPERATIONS</span>
+<span class="material-symbols-outlined text-[13px] text-ink-muted">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">APPROVALS</span>
+<span class="material-symbols-outlined text-[13px] text-ink-muted">chevron_right</span>
+<span class="text-ink font-bold">PENDING MAKER-CHECKER QUEUE</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-status-warning-bg border border-status-warning/20">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning animate-pulse"></span>
+<span class="font-caption text-caption text-status-warning uppercase font-semibold">3 PENDING AUTHORIZATION</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container border border-line">
+<span class="material-symbols-outlined text-[13px] text-ink-mid">verified_user</span>
+<span class="font-caption text-caption text-ink-mid uppercase font-semibold">POLICY: DUAL-CONTROL GOVERNANCE</span>
+</div>
+</div>
+</div>
+<!-- Operational Header & Primary Controls -->
+<div class="pt-space-md pb-space-lg flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-display-md text-display-md text-ink tracking-tight font-bold">Maker-Checker Approvals Queue</h1>
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20">Node-UK-4</span>
+</div>
+<p class="font-body-md text-body-md text-ink-mid mt-0.5 max-w-3xl">
+        Review, validate diffs, and approve or reject reference data modifications submitted by authorized makers. Dual-authorization enforces immutable runtime integrity.
+      </p>
+</div>
+<!-- Live Telemetry Spark Counter -->
+<div class="flex items-center gap-space-md bg-canvas border border-line px-space-md py-2.5 rounded shadow-sm shrink-0">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-ink-muted uppercase">Avg Sign-off Turnaround</span>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm font-bold text-ink">14.2m</span>
+<span class="inline-flex items-center text-[11px] font-semibold text-status-success font-code-xs">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> 2.1m SLA
+          </span>
+</div>
+</div>
+<div class="h-8 w-[1px] bg-line"></div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-ink-muted uppercase">Cycle Status</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Auto-Sync Armed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter & Fast Triage Bar -->
+<div class="bg-canvas border border-line rounded p-space-sm mb-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap w-full md:w-auto">
+<span class="font-label-sm text-label-sm text-ink-mid px-2">Domain:</span>
+<button class="px-3 py-1 rounded-full text-xs font-semibold bg-nav-bg text-canvas border border-nav-bg" type="button">All (3)</button>
+<button class="px-3 py-1 rounded-full text-xs font-medium text-ink-mid bg-surface hover:bg-surface-container transition-colors" type="button">Payments (1)</button>
+<button class="px-3 py-1 rounded-full text-xs font-medium text-ink-mid bg-surface hover:bg-surface-container transition-colors" type="button">Core-Banking (1)</button>
+<button class="px-3 py-1 rounded-full text-xs font-medium text-ink-mid bg-surface hover:bg-surface-container transition-colors" type="button">Events (1)</button>
+<div class="h-4 w-[1px] bg-line mx-1 hidden sm:block"></div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-ink-mid px-2 hidden sm:inline">State:</span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-medium text-on-surface hover:bg-surface border border-line" type="button">
+<span class="">Pending Review</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full md:w-auto justify-end">
+<div class="relative w-full md:w-72">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-ink-muted text-[17px]">search</span>
+<input class="w-full h-[34px] pl-8 pr-3 text-xs bg-surface border border-line rounded text-ink focus:outline-none focus:border-primary focus:bg-canvas transition-colors placeholder:text-ink-muted" placeholder="Search Request ID, Entity, Maker..." type="text">
+</div>
+<button class="h-[34px] w-[34px] flex items-center justify-center rounded border border-line bg-canvas text-ink-mid hover:bg-surface-subtle transition-colors shrink-0" title="Refresh Queue" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+</div>
+</div>
+<!-- FEATURED ACTIVE REVIEW CARD (Asymmetric Maker-Checker Stage) -->
+<section class="bg-canvas border border-line rounded mb-space-xl shadow-sm overflow-hidden">
+<!-- Active Stage Banner -->
+<div class="border-b border-line bg-surface-subtle px-space-lg py-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<div class="w-9 h-9 rounded bg-primary-container/10 border border-primary/20 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-code-xs text-code-xs bg-nav-bg text-canvas px-1.5 py-0.5 rounded tracking-wide">CHG-10482</span>
+<h2 class="font-headline-sm text-headline-sm text-ink font-bold">Holiday Calendar — UK</h2>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-status-danger-bg text-status-danger border border-status-danger/30 uppercase tracking-wider">HIGH PRIORITY</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-ink-mid font-code-xs text-code-xs">
+<span class="text-ink font-semibold">CORE-BANKING</span>
+<span class="">·</span>
+<span class="text-tertiary">REF-UK-HOLIDAY-CALENDAR</span>
+<span class="">·</span>
+<span class="text-ink-muted">SCHEMA v4.2.0</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-auto">
+<div class="text-right">
+<span class="font-caption text-caption text-ink-muted block uppercase">SLA Clock</span>
+<span class="font-code-sm text-code-sm font-bold text-status-danger flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[16px] animate-spin">timelapse</span> 42 mins remaining
+          </span>
+</div>
+<div class="h-7 w-[1px] bg-line hidden sm:block"></div>
+<button class="text-ink-mid hover:text-primary font-label-sm text-label-sm flex items-center gap-0.5 transition-colors" type="button">
+<span class="">Full Audit Log</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Structured Institutional Metadata Specifier Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 border-b border-line bg-canvas divide-y md:divide-y-0 md:divide-x divide-line text-xs">
+<div class="p-space-md flex flex-col justify-between gap-1">
+<span class="font-caption text-caption text-ink-muted uppercase">Authorized Maker</span>
+<div class="flex items-center gap-2 mt-1">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-[10px]">AP</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-ink font-semibold">A. Patel</span>
+<span class="font-code-xs text-code-xs text-ink-mid">Treasury Ops / LDN (094182)</span>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between gap-1">
+<span class="font-caption text-caption text-ink-muted uppercase">Timestamp of Submission</span>
+<div class="mt-1">
+<span class="font-code-sm text-code-sm text-ink font-semibold">06 Oct 2026 · 08:16:42 UTC</span>
+<span class="font-body-sm text-body-sm text-ink-muted block">Signed via HSM Token #8841-B</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between gap-1">
+<span class="font-caption text-caption text-ink-muted uppercase">Target Release Window</span>
+<div class="mt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Immediate (Next Cycle 12:00 UTC)</span>
+</div>
+<span class="font-body-sm text-body-sm text-ink-muted block">Hot-reload without bus quarantine</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between gap-1">
+<span class="font-caption text-caption text-ink-muted uppercase">Governing Business Justification</span>
+<div class="mt-1">
+<p class="font-body-sm text-body-sm text-ink leading-tight">
+            "Annual UK Bank Holiday maintenance - Queen's Memorial Spring Observance addition per Cabinet Office bulletin."
+          </p>
+</div>
+</div>
+</div>
+<!-- Side-by-Side Maker-Checker Dual Diff Viewer -->
+<div class="p-space-lg bg-surface">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-ink-mid text-[18px]">difference</span>
+<span class="font-title-sm text-title-sm text-ink font-bold">Payload Delta Inspector</span>
+<span class="font-code-xs text-code-xs text-ink-muted">(2 modifications, 1 addition, 0 deletions)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2 py-1 rounded bg-canvas border border-line text-xs font-medium text-ink-mid hover:text-ink" type="button">Raw JSON</button>
+<button class="px-2 py-1 rounded bg-nav-bg text-canvas border border-nav-bg text-xs font-semibold" type="button">Table View</button>
+</div>
+</div>
+<div class="border border-line rounded overflow-hidden shadow-sm bg-canvas">
+<div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-line">
+<!-- Left Column: Current Runtime State -->
+<div class="flex flex-col">
+<div class="h-9 px-space-md bg-surface-alt border-b border-line flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-ink-muted"></span>
+<span class="font-label-sm text-label-sm text-ink-mid font-semibold">Current Version (v17 - Active Production)</span>
+</div>
+<span class="font-code-xs text-code-xs text-ink-muted">SHA: 8cf01b92a4</span>
+</div>
+<div class="p-0 font-code-sm text-code-sm overflow-x-auto">
+<div class="grid grid-cols-12 py-2 px-space-md border-b border-line/60 bg-surface-subtle text-ink-muted font-bold text-[11px] uppercase tracking-wider">
+<div class="col-span-4">ISO-8601 Date</div>
+<div class="col-span-5">Day Classification</div>
+<div class="col-span-3 text-right">Settlement Clearing</div>
+</div>
+<div class="grid grid-cols-12 py-2.5 px-space-md border-b border-line-hairline items-center text-ink">
+<div class="col-span-4 font-semibold">2027-05-31</div>
+<div class="col-span-5 text-ink-mid">Business Day (Standard)</div>
+<div class="col-span-3 text-right text-status-success font-code-xs">OPEN (CHAPS)</div>
+</div>
+<div class="grid grid-cols-12 py-2.5 px-space-md border-b border-line-hairline items-center text-ink">
+<div class="col-span-4 font-semibold">2027-08-30</div>
+<div class="col-span-5 text-ink-mid">Business Day (Standard)</div>
+<div class="col-span-3 text-right text-status-success font-code-xs">OPEN (CHAPS)</div>
+</div>
+<div class="grid grid-cols-12 py-2.5 px-space-md items-center text-ink">
+<div class="col-span-4 font-semibold">2027-12-27</div>
+<div class="col-span-5 text-status-danger font-medium">Bank Holiday (Christmas Sub)</div>
+<div class="col-span-3 text-right text-ink-muted font-code-xs">HALTED</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Proposed Version (Staged) -->
+<div class="flex flex-col bg-canvas">
+<div class="h-9 px-space-md bg-status-success-bg border-b border-line flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+<span class="font-label-sm text-label-sm text-status-success font-bold">Proposed Version (v18 - Staged Change)</span>
+</div>
+<span class="font-code-xs text-code-xs text-status-success font-semibold">STAGE-ID: PR-8902</span>
+</div>
+<div class="p-0 font-code-sm text-code-sm overflow-x-auto">
+<div class="grid grid-cols-12 py-2 px-space-md border-b border-line/60 bg-status-success-bg/40 text-status-success font-bold text-[11px] uppercase tracking-wider">
+<div class="col-span-4">ISO-8601 Date</div>
+<div class="col-span-5">Day Classification</div>
+<div class="col-span-3 text-right">Settlement Clearing</div>
+</div>
+<!-- Highlighted Diff Line: Added/Modified -->
+<div class="grid grid-cols-12 py-2.5 px-space-md border-b border-line-hairline items-center bg-status-success-bg/60 text-ink">
+<div class="col-span-4 font-bold text-status-success flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span class="">2027-05-31</span>
+</div>
+<div class="col-span-5 font-bold text-status-success flex items-center gap-2">
+<span class="">BANK HOLIDAY</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] bg-status-success text-canvas font-bold uppercase tracking-wider">+ ADDED</span>
+</div>
+<div class="col-span-3 text-right text-status-danger font-code-xs font-bold">HALTED (BLOCKED)</div>
+</div>
+<div class="grid grid-cols-12 py-2.5 px-space-md border-b border-line-hairline items-center text-ink">
+<div class="col-span-4 font-semibold">2027-08-30</div>
+<div class="col-span-5 text-ink-mid">Business Day (Standard)</div>
+<div class="col-span-3 text-right text-status-success font-code-xs">OPEN (CHAPS)</div>
+</div>
+<div class="grid grid-cols-12 py-2.5 px-space-md items-center text-ink">
+<div class="col-span-4 font-semibold">2027-12-27</div>
+<div class="col-span-5 text-status-danger font-medium">Bank Holiday (Christmas Sub)</div>
+<div class="col-span-3 text-right text-ink-muted font-code-xs">HALTED</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Impact Analysis, Health Checks & System Alerts -->
+<div class="px-space-lg py-space-md border-t border-b border-line bg-canvas">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Downstream Consumer Fan-out -->
+<div class="flex items-start gap-3 p-3 rounded bg-surface border border-line">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">hub</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-ink font-semibold">5 Downstream Consumers</span>
+<span class="font-body-sm text-body-sm text-ink-mid mt-0.5">Automated webhook broadcast prepared for:</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="font-code-xs text-[10px] px-1.5 py-0.5 bg-canvas border border-line rounded text-ink font-medium">PAYMENTS</span>
+<span class="font-code-xs text-[10px] px-1.5 py-0.5 bg-canvas border border-line rounded text-ink font-medium">SETTLEMENTS</span>
+<span class="font-code-xs text-[10px] px-1.5 py-0.5 bg-canvas border border-line rounded text-ink font-medium">CLEARING</span>
+<span class="font-code-xs text-[10px] px-1.5 py-0.5 bg-canvas border border-line rounded text-ink font-medium">LIQUIDITY-ENGINE</span>
+</div>
+</div>
+</div>
+<!-- Automated Safety & Integrity Verifications -->
+<div class="flex items-start gap-3 p-3 rounded bg-surface border border-line">
+<span class="material-symbols-outlined text-status-success text-[22px] mt-0.5">fact_check</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-ink font-semibold">Pre-Flight Syntactic Pass</span>
+<span class="font-body-sm text-body-sm text-ink-mid mt-0.5">Deterministic checks concluded with 0 exceptions.</span>
+<ul class="mt-1.5 space-y-1 font-code-xs text-[11px] text-ink">
+<li class="flex items-center gap-1.5 text-status-success">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span class="">0 Schema Structural Conflicts</span>
+</li>
+<li class="flex items-center gap-1.5 text-status-success">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span class="">100% Calendar Sequence Verification Pass</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Cross-Border Regulatory Guardrails -->
+<div class="flex items-start gap-3 p-3 rounded bg-status-warning-bg/40 border border-status-warning/20">
+<span class="material-symbols-outlined text-status-warning text-[22px] mt-0.5">policy</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-ink font-semibold">BCBS 239 &amp; Dual-Control Verification</span>
+<p class="font-body-sm text-body-sm text-ink-mid mt-0.5">
+              Maker signature verified against Active Directory entitlement group: <code class="font-code-xs text-ink font-bold">CN=TREASURY-MAKER-L4</code>. You are designated Checker.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Dual-Control Decision Action Bar -->
+<div class="p-space-lg bg-surface-subtle flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<div class="relative flex-1">
+<label class="block font-caption text-caption text-ink-mid uppercase font-semibold mb-1.5" for="checker-audit-note">
+          Checker Authorization Justification Note <span class="text-status-danger">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-[44px] px-3.5 text-sm bg-canvas border border-line rounded text-ink placeholder:text-ink-muted focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="checker-audit-note" placeholder="Add mandatory checker audit comment (minimum 15 characters for regulatory trail)..." type="text">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-ink-muted text-[18px]">edit_note</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end xl:self-end pt-2 xl:pt-0">
+<!-- Reject Button (Danger Red Outline) -->
+<button class="h-[44px] px-5 rounded-full bg-canvas text-status-danger border-2 border-status-danger hover:bg-status-danger-bg transition-colors font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm" onclick="handleDecision('reject')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="">Reject Change</span>
+</button>
+<!-- Request Information (Neutral Utility) -->
+<button class="h-[44px] px-5 rounded-full bg-canvas text-ink border border-line hover:bg-surface-subtle transition-colors font-label-md text-label-md font-medium flex items-center gap-1.5 shadow-sm" onclick="handleDecision('request-info')" type="button">
+<span class="material-symbols-outlined text-[18px]">help_center</span>
+<span class="">Request Information</span>
+</button>
+<!-- Approve & Publish (Solid Royal Blue Pill) -->
+<button class="h-[44px] px-6 rounded-full bg-[#006de3] text-canvas hover:bg-interactive-hover transition-colors font-label-md text-label-md font-semibold flex items-center gap-2 shadow-sm" onclick="handleDecision('approve')" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span class="">Approve &amp; Publish to Production</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECONDARY QUEUE TABLE: Other Pending Change Requests -->
+<div class="flex flex-col">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<h3 class="font-title-md text-title-md text-ink font-bold">Other Pending Change Requests in Queue</h3>
+<span class="px-2 py-0.5 rounded text-xs font-bold bg-surface-container text-ink font-code-xs">2 REMAINING</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-mid">
+<span class="font-caption text-caption uppercase">Sorted by: Urgency / Age</span>
+</div>
+</div>
+<!-- Reference Queue Table Shell -->
+<div class="bg-canvas border border-line rounded overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-alt border-b border-line text-ink-mid font-label-sm text-label-sm select-none">
+<th class="py-2.5 px-space-md font-semibold w-36">Request ID</th>
+<th class="py-2.5 px-space-md font-semibold w-48">Domain &amp; Entity</th>
+<th class="py-2.5 px-space-md font-semibold">Change Summary &amp; Diff Scope</th>
+<th class="py-2.5 px-space-md font-semibold w-44">Maker</th>
+<th class="py-2.5 px-space-md font-semibold w-32">Submission</th>
+<th class="py-2.5 px-space-md font-semibold w-28 text-center">Priority</th>
+<th class="py-2.5 px-space-md font-semibold w-36 text-right">Workflow</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-line text-xs font-body-sm text-ink">
+<!-- Row 1: Payments CHG-10481 -->
+<tr class="hover:bg-interactive-tint/30 transition-colors group">
+<td class="py-3 px-space-md font-code-sm text-code-sm font-semibold text-primary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-ink-muted group-hover:text-primary">schedule</span>
+<span class="">CHG-10481</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-ink">Date Control</span>
+<span class="font-code-xs text-code-xs text-ink-muted">PAYMENTS</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm text-ink font-medium">Business date -&gt; 07 Oct 2026</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-status-info-bg text-status-info font-code-xs font-semibold">EOD ROLLOVER</span>
+</div>
+<span class="text-ink-muted text-xs block mt-0.5">Automated nocturnal cycle forward step for Fedwire settlement gateway.</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5">
+<div class="w-5 h-5 rounded-full bg-secondary text-canvas flex items-center justify-center text-[9px] font-bold">JS</div>
+<span class="font-label-sm text-label-sm text-ink">J. Smith</span>
+</div>
+</td>
+<td class="py-3 px-space-md font-code-xs text-code-xs text-ink-mid">
+                42 min ago
+              </td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-status-danger-bg text-status-danger border border-status-danger/20 uppercase tracking-wide">
+                  High
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold text-primary hover:bg-primary/10 border border-primary/30 transition-all" type="button">
+<span class="">Review Diff</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Events CHG-10480 -->
+<tr class="hover:bg-interactive-tint/30 transition-colors group">
+<td class="py-3 px-space-md font-code-sm text-code-sm font-semibold text-primary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-ink-muted group-hover:text-primary">schedule</span>
+<span class="">CHG-10480</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-ink">Stream Config</span>
+<span class="font-code-xs text-code-xs text-ink-muted">EVENTS</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm text-ink font-medium">Partition mapping update (Kafka cluster 4)</span>
+</div>
+<span class="text-ink-muted text-xs block mt-0.5">Rebalancing topics: <code class="font-code-xs text-ink">cib.trade.allocations</code> partition count expansion [16 -&gt; 32].</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5">
+<div class="w-5 h-5 rounded-full bg-tertiary text-canvas flex items-center justify-center text-[9px] font-bold">RK</div>
+<span class="font-label-sm text-label-sm text-ink">R. Kumar</span>
+</div>
+</td>
+<td class="py-3 px-space-md font-code-xs text-code-xs text-ink-mid">
+                1 hr ago
+              </td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-surface-container text-ink-mid border border-line uppercase tracking-wide">
+                  Normal
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold text-primary hover:bg-primary/10 border border-primary/30 transition-all" type="button">
+<span class="">Review Diff</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Queue Footer / Status Ribbon -->
+<div class="px-space-md py-2.5 bg-surface-subtle border-t border-line flex flex-col sm:flex-row items-center justify-between text-xs text-ink-mid gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-status-success">lock</span>
+<span class="">Checker segregation of duty verified: Logged-in user (<strong class="text-ink">J. Smith</strong>) cannot authorize self-originated requests.</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-code-xs text-code-xs">Showing 2 of 2 queued requests</span>
+<button class="text-primary hover:underline font-semibold" type="button">View Historical Authorizations</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container (interactive feedback) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notification">
+<div class="bg-nav-deep text-canvas px-4 py-3 rounded shadow-xl border border-line/20 flex items-center gap-3">
+<span class="material-symbols-outlined text-status-success text-[20px]" id="toast-icon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold" id="toast-title">Action Completed</span>
+<span class="font-body-sm text-body-sm text-nav-muted" id="toast-message">CHG-10482 approved and published.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function handleDecision(action) {
+    const noteInput = document.getElementById('checker-audit-note');
+    const toast = document.getElementById('toast-notification');
+    const toastTitle = document.getElementById('toast-title');
+    const toastMessage = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+
+    if (action === 'approve') {
+      if (!noteInput.value || noteInput.value.trim().length < 5) {
+        noteInput.focus();
+        noteInput.classList.add('border-status-danger');
+        alert('SOX 404 Regulatory Compliance Warning: A mandatory checker audit comment is required to complete production authorization.');
+        return;
+      }
+      noteInput.classList.remove('border-status-danger');
+      toastTitle.textContent = 'Authorization Confirmed';
+      toastMessage.textContent = 'Change CHG-10482 committed to Reference Core and broadcast to 5 consumers.';
+      toastIcon.textContent = 'verified';
+      toastIcon.className = 'material-symbols-outlined text-status-success text-[20px]';
+    } else if (action === 'reject') {
+      toastTitle.textContent = 'Change Rejected';
+      toastMessage.textContent = 'CHG-10482 returned to Maker (A. Patel) with rollback annotations.';
+      toastIcon.textContent = 'cancel';
+      toastIcon.className = 'material-symbols-outlined text-status-danger text-[20px]';
+    } else {
+      toastTitle.textContent = 'Information Requested';
+      toastMessage.textContent = 'Clarification ticket linked to CHG-10482 dispatched to Maker.';
+      toastIcon.textContent = 'contact_support';
+      toastIcon.className = 'material-symbols-outlined text-status-info text-[20px]';
+    }
+
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+    }, 4500);
+  }
+</script></main></div>
+
+</body></html>
